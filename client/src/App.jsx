@@ -14,7 +14,7 @@ const App = () => {
     <div className="bg-[url('/bgImage.svg')] bg-contain">
       <Toaster/>
       <Routes>
-        <Route element={authUser ? <Homepage/> : <Navigate to={"/login"} /> } path='/'/>
+        <Route element={authUser ? <HomePage/> : <Navigate to={"/login"} /> } path='/'/>
         <Route element={!authUser ? <LoginPage/> : <Navigate to={"/"} /> }  path='/login'/>
         <Route element={authUser ? <ProfilePage/> : <Navigate to={"/login"} /> } path='/profile'/>
       </Routes>

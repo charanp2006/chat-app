@@ -4,7 +4,7 @@ import ChatContainer from '../components/ChatContainer'
 import RightSidebar from '../components/RightSidebar'
 import { ChatContext } from '../../context/ChatContext'
 
-const Homepage = () => {
+const HomePage = () => {
 
   const {selectedUser} = useContext(ChatContext);
 
@@ -19,4 +19,4 @@ const Homepage = () => {
   )
 }
 
-export default Homepage
+export default HomePage
